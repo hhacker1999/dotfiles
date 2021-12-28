@@ -15,7 +15,8 @@ ripgrep
 zsh
 zsh-completions-git
 dwm
-pulse audio
+pulseaudio
+pulseaudio-bluetooth
 pamixer
 ttf-font-awesome
 bluez
