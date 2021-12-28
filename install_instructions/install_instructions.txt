@@ -1,0 +1,22 @@
+#Packages to Install
+xwallpapers
+xorg
+xorg-server
+commitizen
+lazygit
+kitty
+nvim
+picom
+npm
+nvm
+pip
+ripgrep
+zsh
+zsh-completions-git
+dwm
+
+
+#To auto mount secondary hard drive add this line to fstab
+UUID=DC8852238851FC88 			  /media/data 	 ntfs 	 defaults 0 0
+
+
