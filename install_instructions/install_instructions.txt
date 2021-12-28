@@ -17,6 +17,7 @@ zsh-completions-git
 dwm
 pulse audio
 pamixer
+ttf-font-awesome
 
 
 #To auto mount secondary hard drive add this line to fstab
