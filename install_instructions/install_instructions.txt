@@ -2,6 +2,7 @@
 xwallpapers
 xorg
 xorg-server
+xorg-xsetroot
 commitizen
 lazygit
 kitty
