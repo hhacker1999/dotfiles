@@ -7,7 +7,7 @@ commitizen
 lazygit
 kitty
 nvim
-picom-ibhagwan-git
+picom
 npm
 nvm
 pip
