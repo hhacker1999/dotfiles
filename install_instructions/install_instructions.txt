@@ -7,7 +7,7 @@ commitizen
 lazygit
 kitty
 nvim
-picom
+picom-ibhagwan-git
 npm
 nvm
 pip
@@ -18,6 +18,8 @@ dwm
 pulse audio
 pamixer
 ttf-font-awesome
+bluez
+bluez-utils
 
 
 #To auto mount secondary hard drive add this line to fstab
