@@ -33,7 +33,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "kitty",     NULL,       NULL,       1,            0,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Brave-browser",  NULL,       NULL,          2,       0,           -1 },
 	{ "android-studio",  NULL,       NULL,       1 << 8,       1,           -1 },
 };
 
@@ -65,12 +65,14 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_recency" };
 static const char *termcmd[]  = { "kitty", NULL };
+static const char *browsercmd[]  = { "brave", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
