@@ -1,5 +1,16 @@
 /* See LICENSE file for copyright and license details. */
 
+// include keys for media playback usage
+#include <X11/XF86keysym.h>
+
+
+// Commands for media playback control
+// install pamixer with pulse audio for it to work
+static const char *upvol[]   = { "pamixer", "-i", "5" };
+static const char *downvol[] = { "pamixer", "-d", "5" };
+static const char *mutevol[] = { "pamixer", "-t" };
+
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -69,6 +80,9 @@ static const char *browsercmd[]  = { "brave", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+  { MODKEY,                       XK_F2,     spawn, {.v = downvol } },
+	{ MODKEY,                       XK_F4,     spawn, {.v = mutevol } },
+	{ MODKEY,                       XK_F3,     spawn, {.v = upvol   } },
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
