@@ -16,7 +16,7 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode NF:size=12:antialias=true:autohint=true" };
+static const char *fonts[]          = { "FiraCode Nerd Font:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JoyPixels:size=11:antialias=true:autohint=true";
 static const char norm_fg[] = "#f4f4db";
 static const char norm_bg[] = "#091613";
@@ -74,7 +74,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_recency" };
+static const char *dmenucmd[] = { "dmenu_run" };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *browsercmd[]  = { "brave", NULL };
 
