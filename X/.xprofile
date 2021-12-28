@@ -22,4 +22,4 @@ export XDG_DATA_HOME=$HOME/.local/share
 export ZDOTDIR=$HOME/.config/zsh
 
 # DWM status
-dwmstatus 2>&1 >/dev/null &
+$HOME/.config/dwm-bar/dwm_bar.sh &
