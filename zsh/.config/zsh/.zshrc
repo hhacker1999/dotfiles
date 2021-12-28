@@ -65,5 +65,5 @@ autoload edit-command-line; zle -N edit-command-line
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="brave"
