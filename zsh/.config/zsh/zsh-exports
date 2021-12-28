@@ -1,0 +1,2 @@
+#!/bin/sh
+export PATH=$PATH:/home/harsh/flutter/bin:/home/harsh/Android/Sdk/platform-tools:/opt/android-studio/jre/bin
