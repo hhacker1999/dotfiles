@@ -22,7 +22,7 @@ dwm_resources () {
 	STOPER=$(echo $df_output | awk '{print $5}')
 
 	printf "%s" "$SEP1"
-		printf "  |  %s/%s |  %s  %s/%s: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$STOUSED" "$STOTOT" "$STOPER"
+		printf "   %s/%s |  %s |  %s/%s: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$STOUSED" "$STOTOT" "$STOPER"
 	printf "%s\n" "$SEP2"
 }
 
