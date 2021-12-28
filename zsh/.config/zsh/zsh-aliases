@@ -1,4 +1,5 @@
 #!/bin/sh
+
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
@@ -20,6 +21,9 @@ alias fgrep='fgrep --color=auto'
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
+
+# always show all files
+alias ls='ls -a'
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes
