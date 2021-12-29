@@ -28,6 +28,9 @@ dmenu: dmenu.o drw.o util.o
 stest: stest.o
 	$(CC) -o $@ stest.o $(LDFLAGS)
 
+delete:
+	rm -rf config.h
+
 clean:
 	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz
 
