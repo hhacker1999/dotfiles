@@ -19,7 +19,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
 # DWM status
-$HOME/.config/dwm-bar/dwm_bar.sh &
+rsblocks &
 
 # zsh config dir
 export ZDOTDIR=$HOME/.config/zsh
