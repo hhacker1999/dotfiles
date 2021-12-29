@@ -16,17 +16,14 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode Nerd Font:size=12:antialias=true:autohint=true" };
-static const char dmenufont[]       = "JoyPixels:size=11:antialias=true:autohint=true";
-static const char norm_fg[] = "#f4f4db";
+static const char *fonts[]          = { "FiraCode Nerd Font:size=11:antialias=true:autohint=true" };
+static const char dmenufont[]       = "JoyPixels:size=10:antialias=true:autohint=true";
+static const char norm_fg[] = "#f1d37b";
 static const char norm_bg[] = "#091613";
 static const char norm_border[] = "#aaaa99";
-static const char sel_fg[] = "#f4f4db";
-static const char sel_bg[] = "#708B6D";
+static const char sel_fg[] = "#6F5720";
+static const char sel_bg[] = "#CF9F17";
 static const char sel_border[] = "#f4f4db";
-static const char urg_fg[] = "#f4f4db";
-static const char urg_bg[] = "#546D56";
-static const char urg_border[] = "#546D56";
 
 static const char *colors[][3]      = {
     /*               fg           bg         border                         */
