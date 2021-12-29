@@ -57,6 +57,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim" -- Adds a startup screen
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim" -- Add support for which key
+  use "norcalli/nvim-colorizer.lua" -- Add support for colors in terminal
 
   -- Git
   use "lewis6991/gitsigns.nvim"
