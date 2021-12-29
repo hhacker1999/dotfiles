@@ -3,7 +3,7 @@
 picom -b
 
 # Wallpaper
-xwallpaper --zoom ~/.wall/skull.jpg
+xwallpaper --zoom ~/.wall/mandala.jpg
 
 # Speedy keys
 xset r rate 210 40
