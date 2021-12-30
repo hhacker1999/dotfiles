@@ -27,11 +27,12 @@ xdg-utils
 python-pywal
 lxappearance
 ntfs-3g
+neovide-git(yay)
 
 
 #To auto mount secondary hard drive add this line to fstab
 UUID=DC8852238851FC88 			  /media/data 	 ntfs 	 defaults 0 0
 
 
-#To set default browser xdg-settings set default-web-browser brave-browser.desktop
+#To set default browser: xdg-settings set default-web-browser brave-browser.desktop
 
