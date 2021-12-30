@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim" -- Add support for which key
   use "norcalli/nvim-colorizer.lua" -- Add support for colors in terminal
+  use "tversteeg/registers.nvim" -- For better registers support
 
   -- Git
   use "lewis6991/gitsigns.nvim"
@@ -89,6 +90,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- Use native fzf for better performance
 
   -- Treesitter
   use {
@@ -96,10 +98,6 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"  -- Replacement for Bracket pair colourizer in Vs code
-
-  -- Flutter
-  use "akinsho/flutter-tools.nvim"
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

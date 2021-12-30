@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/harsh/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
-  ["flutter-tools.nvim"] = {
-    loaded = true,
-    path = "/home/harsh/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
-    url = "https://github.com/akinsho/flutter-tools.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/harsh/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -238,6 +233,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/harsh/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  ["registers.nvim"] = {
+    loaded = true,
+    path = "/home/harsh/.local/share/nvim/site/pack/packer/start/registers.nvim",
+    url = "https://github.com/tversteeg/registers.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/harsh/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
