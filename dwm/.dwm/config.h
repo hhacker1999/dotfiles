@@ -42,7 +42,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "kitty",     NULL,       NULL,       1,            0,           -1 },
 	{ "Brave-browser",  NULL,       NULL,          2,       0,           -1 },
-	{ "android-studio",  NULL,       NULL,       1 << 8,       1,           -1 },
+	{ "jetbrains-studio",  NULL,       NULL,       1 << 8,       1,           -1 },
 };
 
 /* layout(s) */
@@ -74,6 +74,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run" };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *browsercmd[]  = { "brave", NULL };
+static const char *editor[]  = { "neovide", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -82,6 +83,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F3,     spawn, {.v = upvol   } },
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = editor } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
