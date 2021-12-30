@@ -14,22 +14,13 @@ static const char *mutevol[] = { "pamixer", "-t" };
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int gappx     = 5;        /* gap pixel between windows */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "FiraCode Nerd Font:size=11:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JoyPixels:size=10:antialias=true:autohint=true";
-static const char norm_fg[] = "#f1d37b";
-static const char norm_bg[] = "#091613";
-static const char norm_border[] = "#aaaa99";
-static const char sel_fg[] = "#6F5720";
-static const char sel_bg[] = "#CF9F17";
-static const char sel_border[] = "#f4f4db";
 
-static const char *colors[][3]      = {
-    /*               fg           bg         border                         */
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
+#include "colorschemes/purple.h"
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };

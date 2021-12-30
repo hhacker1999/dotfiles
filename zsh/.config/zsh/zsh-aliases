@@ -1,8 +1,12 @@
 #!/bin/sh
 
+# lazygit
 alias g='lazygit'
+
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias nvimrc='nvim ~/.config/nvim/'
+
+# nvimrc
+alias nvimc='nvim ~/dotfiles/neovim/.config/nvim/init.lua'
 
 # alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
 
@@ -39,7 +43,7 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
 # systemd
-alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
+alias systemstatus="systemctl list-unit-files --state=enabled"
 
 
 # Path of hard drive
@@ -48,10 +52,42 @@ alias drive="/media/data"
 # nvim
 alias vi="nvim"
 
+# neovide
+alias nv="neovide"
+
 # reboot & shutdown
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
 
-# build dwm
+# build dwm and dmenu
 alias build="sudo make delete install clean"
+
+# dwm config
+alias dwmc="nvim ~/dotfiles/dwm/.dwm/config.def.h"
+
+# dmenu config
+alias dmenuc="nvim ~/dotfiles/dmenu/dmenu/config.def.h"
+
+# Xresources 
+alias xc="nvim ~/dotfiles/X/.xprofile"
+
+# install instructions
+alias installc="nvim ~/dotfiles/install_instructions/install_instructions.txt"
+
+# zsh config
+alias zshc="nvim ~/dotfiles/zsh/.config/zsh/.zshrc"
+
+# picom config
+alias picomc="nvim ~/dotfiles/picom/.config/picom/picom.conf"
+
+# kitty config
+alias kittyc="nvim ~/dotfiles/kitty/.config/kitty/kitty.conf"
+
+# rsblocks config
+alias kittyc="nvim ~/dotfiles/rsblocks/.config/rsblocks/rsblocks.yml"
+
+# wallpapers
+alias wallpapers="~/dotfiles/wallpapers/.wall"
+
+
 

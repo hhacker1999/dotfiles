@@ -3,7 +3,7 @@
 picom -b
 
 # Wallpaper
-xwallpaper --zoom ~/.wall/mandala.jpg
+xwallpaper --zoom ~/.wall/Crimson Love27237_square.jpg
 
 # Speedy keys
 xset r rate 210 40
@@ -23,3 +23,4 @@ rsblocks &
 
 # zsh config dir
 export ZDOTDIR=$HOME/.config/zsh
+

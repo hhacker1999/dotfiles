@@ -20,3 +20,6 @@ require "harsh.whichkey"
 require "harsh.autocommands"
 require "harsh.colorizer"
 require "harsh.registers"
+require "harsh.autosave"
+
+

@@ -28,6 +28,15 @@ python-pywal
 lxappearance
 ntfs-3g
 neovide-git(yay)
+ripgrep
+dunst(git)
+dbus
+lightdm
+lightdm-webkit-greeter-with-theme(pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan)(change greeter to web kit in /etc/lightdm/lightdm.conf)
+reflector(for mirrors)
+vlc
+evince(pdf viewer)
+kdeconnect
 
 
 #To auto mount secondary hard drive add this line to fstab

@@ -79,7 +79,7 @@ local opts = {
 }
 
 local mappings = {
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  ["A"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
@@ -95,6 +95,14 @@ local mappings = {
   },
   ["T"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+
+  -- Auto Save
+  a = {
+    name = "AutoSave",
+    t= {":ASToggle<CR>", "Auto Save toggle"},
+    o= {":ASOn<CR>", "Auto Save On"},
+    f= {":ASOff<CR>", "Auto Save Off"},
+  },
 
   -- Flutter which key binds
   F = {

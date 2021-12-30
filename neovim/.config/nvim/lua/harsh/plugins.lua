@@ -59,7 +59,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim" -- Add support for which key
   use "norcalli/nvim-colorizer.lua" -- Add support for colors in terminal
   use "tversteeg/registers.nvim" -- For better registers support
-
+  use "Pocco81/AutoSave.nvim"  -- For auto save
   -- Git
   use "lewis6991/gitsigns.nvim"
 
